@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My dashboard | J Flash Scholars</title>
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" href="/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body data-page="dashboard">
+<header class="site-header"><div class="wrap bar">
+  <a class="brand" href="/"><img src="/img/logo-horizontal.png" alt="J Flash Scholars" width="139" height="44"></a>
+  <nav class="nav" aria-label="Main"><a href="/">Home</a><span id="nav-auth" class="nav-auth"></span></nav>
+</div></header>
+<main>
+<section class="band"><div class="wrap"><h1>My dashboard</h1><p>Your account at J Flash Scholars.</p></div></section>
+<div class="wrap pull"><div class="card narrow">
+  <div id="msg" class="msg" role="status" hidden></div>
+  <div id="content" hidden>
+    <dl class="facts"><dt>Name</dt><dd id="name"></dd><dt>Email</dt><dd id="email"></dd></dl>
+    <p class="msg msg-info">No tests are open yet. When a test is published, it will appear here.</p>
+    <div class="stack"><a id="admin-link" class="btn btn-accent" href="/admin" hidden>Open admin area</a><button id="logout" class="btn btn-ghost" type="button">Log out</button></div>
+  </div>
+</div></div>
+</main>
+<footer class="footer"><div class="wrap">&copy; J Flash Scholars</div></footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="/js/config.js"></script>
+<script src="/js/app.js"></script>
+<script src="/js/auth-pages.js"></script>
+</body>
+</html>

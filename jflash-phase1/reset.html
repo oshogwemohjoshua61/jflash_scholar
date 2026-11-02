@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reset your password | J Flash Scholars</title>
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" href="/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body data-page="reset">
+<header class="site-header"><div class="wrap bar">
+  <a class="brand" href="/"><img src="/img/logo-horizontal.png" alt="J Flash Scholars" width="139" height="44"></a>
+  <nav class="nav" aria-label="Main"><a href="/">Home</a><span id="nav-auth" class="nav-auth"></span></nav>
+</div></header>
+<main>
+<section class="band"><div class="wrap"><h1>Reset your password</h1><p>Enter your email and we will send you a link to choose a new password.</p></div></section>
+<div class="wrap pull"><div class="card narrow">
+  <div id="msg" class="msg" role="status" hidden></div>
+  <form id="request" novalidate>
+    <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+    <button class="btn btn-block" type="submit">Send reset link</button>
+  </form>
+  <form id="update" novalidate hidden>
+    <div class="field"><label for="password">New password</label><input id="password" name="password" type="password" autocomplete="new-password" minlength="8" required>
+      <p class="hint">At least 8 characters.</p></div>
+    <button class="btn btn-block" type="submit">Save new password</button>
+  </form>
+  <p id="done" class="links" hidden><a class="btn" href="/dashboard">Go to my dashboard</a></p>
+  <p class="links"><a href="/login">Back to log in</a></p>
+</div></div>
+</main>
+<footer class="footer"><div class="wrap">&copy; J Flash Scholars</div></footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="/js/config.js"></script>
+<script src="/js/app.js"></script>
+<script src="/js/auth-pages.js"></script>
+</body>
+</html>
