@@ -2,7 +2,7 @@
 // The "anon / publishable" key is SAFE to put here: it is designed to be public.
 // NEVER paste the secret / service_role key in this file.
 window.JF_CONFIG = {
-  SUPABASE_URL: 'PASTE_YOUR_PROJECT_URL_HERE',
-  SUPABASE_ANON_KEY: 'PASTE_YOUR_PUBLIC_ANON_KEY_HERE',
+  SUPABASE_URL:'https://xezihkmxzvyfkygwphfn.supabase.co',
+  SUPABASE_ANON_KEY: 'sb_publishable_hVlHVI8J46xeHau-lOxdlg_6BNn7DVj',
   SITE_NAME: 'J Flash Scholars'
 };
